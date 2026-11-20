@@ -17,6 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "PostgreSqlV2Source",
+						"query": "select * from PUBLIC.hospitals",
 						"queryTimeout": "02:00:00"
 					},
 					"sink": {
@@ -40,7 +41,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "PostgreSqlTable1",
+						"referenceName": "DS_POStGRESQL",
 						"type": "DatasetReference"
 					}
 				],
